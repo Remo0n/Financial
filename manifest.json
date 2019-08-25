@@ -1,0 +1,22 @@
+{
+  "name": "Financial App",
+  "short-name": "Financial",
+  "icons": [
+    {
+      "src": "/images/icon_45x45.png",
+      "type": "image/png",
+      "size": "45x45"
+    },
+    {
+      "src": "/images/icon_95x95.png",
+      "type": "image/png",
+      "size": "95x95"
+    }
+  ],
+  "start_url": "/index.html",
+  "scope": ".",
+  "display": "standalone",
+  "orientation": "any",
+  "dir": "ltr",
+  "lang": "en_US"
+}
