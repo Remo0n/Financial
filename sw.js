@@ -2,7 +2,7 @@ self.addEventListener("install", function(event) {
   console.log("[Service Worker] Installing Service Worker ...", event);
   event.waitUntil(
     caches.open("static").then(function(cache) {
-      cache.add("/js/app.js");
+      cache.add("/index.html");
     })
   );
 });
@@ -13,7 +13,6 @@ self.addEventListener("activate", function(event) {
 });
 
 self.addEventListener("fetch", function(event) {
-  console.log("[Service Worker] Fetching something ....", event);
   event.respondWith(
     caches.match(event.request).then(function(response) {
       if (response) {
