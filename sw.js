@@ -10,7 +10,17 @@ self.addEventListener("install", function(event) {
         "/js/jquery-3.3.1.min.js",
         "/css/bootstrap.min.css",
         "/css/index_style.css",
-        " /images/logo-light.png"
+        "/images/logo-light.png",
+        "/images/logo-dark.png",
+        "/images/full-6-600x420.jpg",
+        "/images/full-5-600x420.jpg",
+        "/images/download%20(1).jpg",
+        "/images/business-main-700x680.jpg",
+        "/images/logo_01.png",
+        "/images/logo_02.png",
+        "/images/logo_03.png",
+        "/images/logo_04.png",
+        "/images/business-2.jpg"
       ]);
     })
   );
