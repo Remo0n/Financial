@@ -2,9 +2,15 @@ self.addEventListener("install", function(event) {
   console.log("[Service Worker] Installing Service Worker ...", event);
   event.waitUntil(
     caches.open("static").then(function(cache) {
-      cache.add("/");
-      cache.add("/index.html");
-      cache.add("/js/app.js");
+      cache.addAll([
+        "/",
+        "/index.html",
+        "/js/app.js",
+        "/js/bootstrap.min.js",
+        "/js/jquery-3.3.1.min.js",
+        "/css/bootstrap.min.css",
+        "/css/index_style.css"
+      ]);
     })
   );
 });
