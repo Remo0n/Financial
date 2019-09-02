@@ -9,7 +9,8 @@ self.addEventListener("install", function(event) {
         "/js/bootstrap.min.js",
         "/js/jquery-3.3.1.min.js",
         "/css/bootstrap.min.css",
-        "/css/index_style.css"
+        "/css/index_style.css",
+        " /images/logo-light.png"
       ]);
     })
   );
