@@ -10,6 +10,7 @@ window.addEventListener("beforeinstallprompt", function(event) {
   console.log("beforeinstallprompt fired");
   deferredPrompt = e;
   prompt();
+  showInstallPromotion();
 });
 
 /* -----------------------------------------------
