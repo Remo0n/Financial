@@ -11,10 +11,10 @@
     
 }
 .logo-dark{
-    opacity: 0;
+    display: none;
 }
 .logo-dark.scrolled{
-    opacity: 1;
+    display: block;
 }
 .logo-white.scrolled{
     display: none !important;
@@ -235,4 +235,28 @@
 .contact button:hover{
     background-color: black;
     color: white;
+}
+@media screen and (max-width: 800px) {
+    .home-caption {
+        width: 80%;
+        top: 15vh;
+        left: 10%;
+    }
+    .navbar-brand{
+        margin-left: unset !important;
+    }
+    .navbar-nav button{
+        display: none;
+    }
+    .ada {
+        padding: 40px 0;
+    }
+    .oursecret, .value {
+        padding: unset;
+    }
+    .review .row div{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
 }
